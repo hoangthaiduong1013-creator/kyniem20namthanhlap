@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kỷ niệm 20 năm – Trường THPT Huỳnh Thúc Kháng – Lâm Hà</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ======================
+         PHONG BÌ MỞ ĐẦU
+         ====================== -->
+    <div id="envelope-section" class="centered">
+      <div class="envelope" id="envelope" aria-label="Phong bì thư">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body"></div>
+
+        <!-- THƯ -->
+        <div class="envelope-letter" id="envelope-letter">
+          <div class="letter-content">
+            <img src="assets/logo.png" alt="Logo trường" class="logo-small" />
+            <h2>Thư tri ân</h2>
+
+            <p>
+              Kính gửi quý thầy cô, các thế hệ học sinh và toàn thể cộng đồng
+              Trường THPT Huỳnh Thúc Kháng – Lâm Hà,<br /><br />
+
+              Hai mươi năm – một chặng đường chưa dài trong lịch sử, nhưng đủ để
+              viết nên một hành trình của niềm tin, của nỗ lực và của những ước
+              mơ tuổi học trò được chắp cánh dưới mái trường thân thương.<br /><br />
+
+              Từ năm 2006, khi những lớp học đầu tiên được hình thành giữa muôn
+              vàn khó khăn, thầy và trò Huỳnh Thúc Kháng đã cùng nhau bền bỉ
+              bước đi. Mỗi năm học trôi qua là thêm một thế hệ trưởng thành,
+              thêm những dấu mốc đáng tự hào, và thêm nhiều ký ức không thể
+              quên: tiếng trống trường, sân cờ, những giờ học vội vàng, và cả
+              những lần cùng nhau cố gắng vì một mục tiêu chung.<br /><br />
+
+              Nhân dịp kỷ niệm 20 năm thành lập, xin gửi lời tri ân sâu sắc đến
+              quý thầy cô – những người đã truyền tri thức bằng cả trái tim,
+              thắp lên ý chí vươn lên cho học sinh. Xin cảm ơn phụ huynh và cộng
+              đồng đã luôn tin tưởng, đồng hành. Và cảm ơn các thế hệ học sinh –
+              những “mầm xanh” mang theo niềm tự hào Huỳnh Thúc Kháng đi khắp
+              muôn nơi.<br /><br />
+
+              <em
+                >“Có những nơi ta chỉ đi qua một lần, nhưng ký ức ở lại mãi — đó
+                là mái trường.”</em
+              >
+            </p>
+
+            <img
+              src="assets/truong-ngaydau.jpg"
+              alt="Trường ngày đầu thành lập"
+              class="img-letter"
+            />
+
+            <button id="accept-btn" class="primary-btn">
+              Chấp nhận &amp; Tiếp tục hành trình
+            </button>
+
+            <p class="hint">(Bấm phong bì để đóng/mở)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================
+         GIAO DIỆN CHÍNH
+         ====================== -->
+    <div id="main-interface" class="hidden">
+      <!-- Banner & Logo -->
+      <header class="main-header">
+        <img src="assets/logo.png" alt="Logo trường" class="logo-main" />
+        <div class="banner">
+          <img
+            src="assets/banner20nam.png"
+            alt="Banner 20 năm"
+            class="banner-img"
+          />
+          <div class="banner-text">
+            <h1>20 năm – Một hành trình</h1>
+          </div>
+        </div>
+      </header>
+
+      <!-- Tabs -->
+      <nav class="tabs-nav">
+        <button class="tab-btn active" data-tab="tab-thungo">Thư ngỏ</button>
+        <button class="tab-btn" data-tab="tab-timeline">
+          Hành trình 20 năm
+        </button>
+        <button class="tab-btn" data-tab="tab-album">Album ảnh</button>
+        <button class="tab-btn" data-tab="tab-thanhtich">
+          Thành tích &amp; Vinh danh
+        </button>
+        <button class="tab-btn" data-tab="tab-video">Video &amp; Ký ức</button>
+      </nav>
+
+      <!-- Nội dung các tab -->
+      <section class="tabs-content">
+        <!-- Tab 1: Thư ngỏ -->
+        <div class="tab-content active" id="tab-thungo">
+          <div class="thungo-container">
+            <img
+              src="assets/loingo.png"
+              alt="Trường ngày đầu"
+              class="img-thungo"
+            />
+            <div class="thungo-text">
+              <h2>Thư ngỏ</h2>
+              <p>
+                <br />Kính gửi quý thầy cô, phụ huynh, các thế hệ học sinh và
+                toàn thể cộng đồng Trường THPT Huỳnh Thúc Kháng – Lâm Hà,<br /><br />
+
+                Trường THPT Huỳnh Thúc Kháng – Lâm Hà là một trong những ngôi
+                trường giàu truyền thống dạy và học của tỉnh Lâm Đồng. Trường
+                mang tên nhà chí sĩ yêu nước Huỳnh Thúc Kháng – biểu tượng cho
+                tinh thần tự học, lòng yêu nước và ý chí vươn lên không
+                ngừng.<br /><br />
+
+                Được thành lập năm 2006, trong bối cảnh giáo dục Lâm Đồng phát
+                triển mạnh mẽ nhằm đáp ứng nhu cầu học tập ngày càng tăng, nhà
+                trường đã từng bước vượt qua khó khăn về cơ sở vật chất, đội ngũ
+                và trang thiết bị. Trải qua nhiều năm xây dựng và trưởng thành,
+                Huỳnh Thúc Kháng không chỉ là nơi học tập, mà còn là mái nhà thứ
+                hai của hàng nghìn thế hệ học sinh – nơi ươm mầm ước mơ, khát
+                vọng và nhân cách tốt đẹp.<br /><br />
+
+                Nhà trường trân trọng cảm ơn đội ngũ cán bộ, giáo viên trẻ,
+                nhiệt huyết và tận tâm – những người không chỉ dạy kiến thức mà
+                còn truyền cảm hứng, hướng dẫn học sinh rèn luyện kỹ năng sống,
+                hình thành nhân cách và ý thức trách nhiệm. Đồng thời, xin cảm
+                ơn quý phụ huynh và cộng đồng đã luôn tin tưởng, đồng hành trên
+                từng bước phát triển của nhà trường.<br /><br />
+
+                Nhân dịp kỷ niệm 20 năm thành lập, kính mời quý vị cùng nhìn lại
+                hành trình đáng tự hào ấy qua những hình ảnh, câu chuyện và dấu
+                mốc đáng nhớ. Mong rằng mỗi người từng gắn bó với Huỳnh Thúc
+                Kháng – Lâm Hà sẽ tìm thấy một phần ký ức thân thương và thêm
+                niềm tin để cùng nhà trường bước tiếp vững vàng trong tương
+                lai.<br /><br />
+
+                <strong
+                  >Trân trọng,<br />Tập thể Trường THPT Huỳnh Thúc Kháng – Lâm
+                  Hà</strong
+                >
+              </p>
+
+              <img
+                src="assets/cu-huynhthuckhang.jpg"
+                alt="Cụ Huỳnh Thúc Kháng"
+                class="img-cu"
+              />
+            </div>
+          </div>
+
+          <div class="share-section">
+            <span>Chia sẻ thư ngỏ:</span>
+
+            <button
+              class="share-btn"
+              data-share="facebook"
+              title="Chia sẻ Facebook"
+            >
+              <img src="assets/icon-fb.jpg" alt="Facebook" />
+            </button>
+
+            <button class="share-btn" data-share="zalo" title="Chia sẻ Zalo">
+              <img src="assets/logo-zalo.png" alt="Zalo" />
+            </button>
+
+            <button
+              class="share-btn"
+              data-share="messenger"
+              title="Chia sẻ Messenger"
+            >
+              <img src="assets/icon-messenger.jpg" alt="Messenger" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab 2: Timeline -->
+        <div class="tab-content" id="tab-timeline">
+          <div class="timeline-container">
+            <h2>Hành trình 20 năm – Những dấu mốc đáng nhớ</h2>
+
+            <div class="timeline">
+              <!-- 2006 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2006</div>
+                <div class="timeline-content">
+                  <h3>Thành lập trường</h3>
+                  <p>
+                    Năm 2006, Trường THPT Huỳnh Thúc Kháng – Lâm Hà chính thức
+                    được thành lập. Từ những lớp học đầu tiên với nhiều khó
+                    khăn, nhà trường đã đặt nền móng cho một hành trình giáo dục
+                    bền bỉ và đầy hy vọng.
+                  </p>
+                  <img
+                    src="assets/2006.jpg"
+                    alt="Ngày thành lập"
+                    class="timeline-img"
+                  />
+                </div>
+              </div>
+
+              <!-- 2010 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2010</div>
+                <div class="timeline-content">
+                  <h3>Những bước tiến đầu tiên</h3>
+                  <p>
+                    Phong trào “Dạy tốt – Học tốt” lan tỏa mạnh mẽ. Nhiều thế hệ
+                    học sinh bắt đầu đạt thành tích cao tại các kỳ thi học sinh
+                    giỏi, tạo dấu ấn trong hệ thống giáo dục của tỉnh.
+                  </p>
+                  <img
+                    src="assets/2010.jpg"
+                    alt="Thành tích"
+                    class="timeline-img"
+                  />
+                </div>
+              </div>
+
+              <!-- 2015 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2015</div>
+                <div class="timeline-content">
+                  <h3>Mở rộng cơ sở vật chất</h3>
+                  <p>
+                    Không gian học tập ngày càng khang trang, xanh – sạch – đẹp.
+                    Nhà trường chú trọng môi trường giáo dục thân thiện, kỷ luật
+                    và nhân văn cho học sinh.
+                  </p>
+                  <img
+                    src="assets/2017.jpg"
+                    alt="Cơ sở vật chất"
+                    class="timeline-img"
+                  />
+                </div>
+              </div>
+
+              <!-- 2021 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021</div>
+                <div class="timeline-content">
+                  <h3>Chuyển đổi số & đổi mới</h3>
+                  <p>
+                    Nhà trường đẩy mạnh ứng dụng CNTT trong dạy học và quản lý.
+                    Các hoạt động STEM, ngoại khóa sáng tạo giúp học sinh tự tin
+                    hội nhập.
+                  </p>
+                  <img
+                    src="assets/2020.jpg"
+                    alt="Chuyển đổi số"
+                    class="timeline-img"
+                  />
+                </div>
+              </div>
+
+              <!-- 2025 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                  <h3>Dấu ấn Quốc gia</h3>
+                  <p>
+                    Năm 2025, học sinh nhà trường đạt giải tại Cuộc thi Vô địch
+                    Tin học Văn phòng cấp Quốc gia và giành Huy chương Bạc tại
+                    Hội khỏe Phù Đổng toàn quốc – minh chứng cho khát vọng vươn
+                    lên của tuổi trẻ Lâm Hà.
+                  </p>
+                  <img
+                    src="assets/2025.jpg"
+                    alt="Dấu ấn 2025"
+                    class="timeline-img"
+                  />
+                </div>
+              </div>
+
+              <!-- 2026 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026</div>
+                <div class="timeline-content">
+                  <h3>Kỷ niệm 20 năm thành lập</h3>
+                  <p>
+                    20 năm là dịp tri ân quá khứ, tự hào hiện tại và hướng tới
+                    tương lai. Huỳnh Thúc Kháng – Lâm Hà tiếp tục bền bỉ phát
+                    triển theo hướng hiện đại, lấy học sinh làm trung tâm.
+                  </p>
+                  <img
+                    src="assets/banner20nam.png"
+                    alt="Kỷ niệm 20 năm"
+                    class="timeline-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Album ảnh -->
+        <div class="tab-content" id="tab-album">
+          <div class="album-container">
+            <h2>Album ảnh kỷ niệm</h2>
+
+            <nav class="album-filter">
+              <button class="album-btn active" data-album="all">Tất cả</button>
+              <button class="album-btn" data-album="ngaydauthanhlap">
+                Ngày đầu thành lập
+              </button>
+              <button class="album-btn" data-album="hoctap">Học tập</button>
+              <button class="album-btn" data-album="ngoaikhoa">
+                Ngoại khóa
+              </button>
+              <button class="album-btn" data-album="thanhtich">
+                Thành tích
+              </button>
+            </nav>
+
+            <div class="album-gallery">
+              <div class="album-item ngaydauthanhlap">
+                <img src="assets/20061.jpg" alt="Ngày đầu" loading="lazy" />
+                <div class="caption">Ngày đầu thành lập</div>
+              </div>
+
+              <div class="album-item hoctap">
+                <img src="assets/hoctap.jpg" alt="Học tập" loading="lazy" />
+                <div class="caption">Lớp học – nơi ước mơ được gọi tên</div>
+              </div>
+
+              <div class="album-item ngoaikhoa">
+                <img src="assets/kyniem.jpg" alt="Ngoại khóa" loading="lazy" />
+                <div class="caption">Tuổi học trò rực rỡ</div>
+              </div>
+
+              <div class="album-item thanhtich">
+                <img
+                  src="assets/thanhtich20122.jpg"
+                  alt="Thành tích"
+                  loading="lazy"
+                />
+                <div class="caption">Tự hào những dấu ấn</div>
+              </div>
+
+              <div class="album-item hoctap">
+                <img src="assets/thanhtich2.jpg" alt="Học tập" loading="lazy" />
+                <div class="caption">Khoảnh khắc không thể quên</div>
+              </div>
+
+              <div class="album-item ngoaikhoa">
+                <img
+                  src="assets/2016kyniem.jpg"
+                  alt="Ngoại khóa"
+                  loading="lazy"
+                />
+                <div class="caption">Hôm nay là ký ức ngày mai</div>
+              </div>
+
+              <div class="album-item ngaydauthanhlap">
+                <img
+                  src="assets/cu-huynhthuckhang.jpg"
+                  alt="Cụ Huỳnh Thúc Kháng"
+                  loading="lazy"
+                />
+                <div class="caption">Người truyền cảm hứng</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Thành tích -->
+        <div class="tab-content" id="tab-thanhtich">
+          <div class="thanhtich-container">
+            <h2>Thành tích &amp; Vinh danh</h2>
+
+            <div class="table-responsive">
+              <table class="thanhtich-table">
+                <thead>
+                  <tr>
+                    <th>Năm</th>
+                    <th>Thành tích</th>
+                    <th>Học sinh tiêu biểu</th>
+                    <th>Ghi chú</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>2023–2024</td>
+                    <td>Kết quả tốt nghiệp THPT đạt mức cao</td>
+                    <td>Học sinh toàn trường</td>
+                    <td>Nhiều năm nằm trong Top 10 Lâm Đồng</td>
+                  </tr>
+                  <tr>
+                    <td>2025</td>
+                    <td>
+                      Giải Khuyến khích Vô địch Tin học Văn phòng Quốc gia
+                    </td>
+                    <td>Đinh Ngọc Bảo An (11A1)</td>
+                    <td>Khen thưởng ngày 16/9/2025</td>
+                  </tr>
+                  <tr>
+                    <td>2025</td>
+                    <td>
+                      Giải Khuyến khích Vô địch Tin học Văn phòng Quốc gia
+                    </td>
+                    <td>Nguyễn Đoàn Mạnh Quyền (11A1)</td>
+                    <td>Khen thưởng ngày 16/9/2025</td>
+                  </tr>
+                  <tr>
+                    <td>2025</td>
+                    <td>Huy chương Bạc Hội khỏe Phù Đổng toàn quốc</td>
+                    <td>Lương Thị Thảo Nguyên (12A2)</td>
+                    <td>Thành tích thể thao cấp Quốc gia</td>
+                  </tr>
+                  <tr>
+                    <td>2025</td>
+                    <td>Huy chương Bạc Hội khỏe Phù Đổng toàn quốc</td>
+                    <td>Nguyễn Hoàng Yến Nhi (12A2)</td>
+                    <td>Thành tích thể thao cấp Quốc gia</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="infographic-section">
+              <h3>Infographic: 20 năm – Những con số ấn tượng</h3>
+              <div class="infographic">
+                <div class="info-card">
+                  <div class="info-number">2006</div>
+                  <div class="info-label">Năm thành lập</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-number">20</div>
+                  <div class="info-label">Năm phát triển</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-number">Top 10</div>
+                  <div class="info-label">Kết quả nổi bật</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-number">2025</div>
+                  <div class="info-label">Dấu ấn Quốc gia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Video -->
+        <div class="tab-content" id="tab-video">
+          <div class="video-container">
+            <h2>Video &amp; Ký ức</h2>
+
+            <div class="video-player">
+              <iframe
+                src="https://youtu.be/iPXfggoTwaA?si=mbdSDXHpBAfT3xQd"
+                title="Chúc mừng sinh nhật thầy cô- 13 years ago"
+                frameborder="0"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="video-playlist">
+              <div class="video-thumb active" data-video="eg6kNoJmzkY">
+                <img src="assets/video-thumb.jpg" alt="Video 1" />
+                <div class="video-title">Phóng sự 20 năm</div>
+              </div>
+
+              <div class="video-thumb" data-video="dQw4w9WgXcQ">
+                <img src="assets/video-thumb2.jpg" alt="Video 2" />
+                <div class="video-title">Chia sẻ cựu học sinh</div>
+              </div>
+
+              <div class="video-thumb" data-video="kXYiU_JCYtU">
+                <img src="assets/video-thumb3.jpg" alt="Video 3" />
+                <div class="video-title">Lời tri ân thầy cô</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <div class="footer-left">
+          <img src="assets/logo.png" alt="Logo trường" class="logo-footer" />
+          <span
+            >Trường THPT Huỳnh Thúc Kháng – Lâm Hà • 20 năm một hành trình</span
+          >
+        </div>
+
+        <!-- Liên hệ em -->
+        <div class="footer-contact">
+          <div class="contact-title">Liên hệ:</div>
+
+          <a
+            class="contact-item"
+            href="https://www.facebook.com/share/1DWgCmXWCV/?mibextid=wwXIfr"
+            target="_blank"
+            rel="noopener"
+            title="Facebook"
+          >
+            <span class="contact-icon">📘</span>
+            <span>Facebook</span>
+          </a>
+
+          <a
+            class="contact-item"
+            href="https://zaloapp.com/qr/p/rz6f0oohix63?src=qr"
+            target="_blank"
+            rel="noopener"
+            title="Zalo"
+          >
+            <span class="contact-icon">💬</span>
+            <span>Zalo</span>
+          </a>
+
+          <a
+            class="contact-item"
+            href="mailto:hoangthaiduong1013@gmail.com"
+            title="Email"
+          >
+            <span class="contact-icon">✉️</span>
+            <span>Email</span>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- 🎵 Nút nhạc nền -->
+    <div class="music-control" id="music-control" title="Bật / tắt nhạc nền">
+      <span class="music-icon" id="music-icon">🎵</span>
+      <span class="music-text" id="music-text">Nhạc: Tắt</span>
+    </div>
+
+    <audio id="bg-music" loop>
+      <source src="assets/nucuoi1820.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
