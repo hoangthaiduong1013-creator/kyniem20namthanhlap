@@ -117,14 +117,13 @@ shareBtns.forEach((btn) => {
 });
 
 // ==========================
-// 🎵 NHẠC NỀN: bật/tắt
+// 🎵 NHẠC NỀN: bật/tắt (FIX mobile)
 // ==========================
 const musicBtn = document.getElementById("music-control");
 const musicIcon = document.getElementById("music-icon");
 const musicText = document.getElementById("music-text");
 const bgMusic = document.getElementById("bg-music");
 
-// mặc định: tắt
 let isPlaying = localStorage.getItem("bgMusic") === "on";
 
 function updateMusicUI() {
@@ -139,11 +138,14 @@ function updateMusicUI() {
   }
 }
 
-async function playMusic() {
+async function forcePlayMusic() {
   try {
-    await bgMusic.play();
+    bgMusic.volume = 0.35;      // set volume trước khi play
+    bgMusic.muted = false;      // chắc chắn không bị mute
+    await bgMusic.play();       // thử phát
+    return true;
   } catch (e) {
-    // browser chặn autoplay -> không sao
+    return false;               // bị browser chặn
   }
 }
 
@@ -155,19 +157,19 @@ function stopMusic() {
 musicBtn.addEventListener("click", async () => {
   isPlaying = !isPlaying;
   localStorage.setItem("bgMusic", isPlaying ? "on" : "off");
-
   updateMusicUI();
 
   if (isPlaying) {
-    bgMusic.volume = 0.35;
-    await playMusic();
+    const ok = await forcePlayMusic();
+    if (!ok) {
+      // iPhone đôi khi cần thêm 1 lần chạm nữa
+      musicText.textContent = "Chạm lại để phát 🎵";
+    }
   } else {
     stopMusic();
   }
 });
 
 updateMusicUI();
-if (isPlaying) {
-  bgMusic.volume = 0.35;
-  playMusic();
-}
+
+
