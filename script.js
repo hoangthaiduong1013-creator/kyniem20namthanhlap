@@ -75,20 +75,20 @@ albumBtns.forEach((btn) => {
 });
 
 // ==========================
-// VIDEO PLAYLIST
+// Video playlist: click thumbnail đổi video chính
 // ==========================
 const videoThumbs = document.querySelectorAll(".video-thumb");
-const videoPlayer = document.querySelector(".video-player iframe");
+const videoPlayer = document.getElementById("main-video");
 
 videoThumbs.forEach((thumb) => {
   thumb.addEventListener("click", function () {
     const videoId = this.dataset.video;
     videoPlayer.src = `https://www.youtube.com/embed/${videoId}`;
-
     videoThumbs.forEach((t) => t.classList.remove("active"));
     this.classList.add("active");
   });
 });
+
 
 // ==========================
 // SHARE (giả lập)
@@ -171,5 +171,6 @@ musicBtn.addEventListener("click", async () => {
 });
 
 updateMusicUI();
+
 
 
