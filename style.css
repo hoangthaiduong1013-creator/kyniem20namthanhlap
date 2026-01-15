@@ -916,3 +916,28 @@ img {
   display: grid;
   place-items: center;
 }
+/* ===== FIX tabs tràn trên điện thoại ===== */
+@media (max-width: 700px) {
+  .tabs-nav {
+    overflow-x: auto;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+    padding: 0 10px;
+    scrollbar-width: none;
+  }
+  .tabs-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-btn {
+    flex: 0 0 auto;
+    min-width: 120px;     /* giúp tab không bị dồn */
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    white-space: normal;  /* cho chữ xuống dòng */
+    line-height: 1.1;
+    text-align: center;
+  }
+}
+
