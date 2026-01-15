@@ -465,39 +465,54 @@
         </div>
 
         <!-- Tab 5: Video -->
-        <div class="tab-content" id="tab-video">
-          <div class="video-container">
-            <h2>Video &amp; Ký ức</h2>
+<div class="tab-content" id="tab-video">
+  <div class="video-container">
+    <h2>Video &amp; Ký ức</h2>
 
-            <div class="video-player">
-              <iframe
-                src="https://youtu.be/iPXfggoTwaA?si=mbdSDXHpBAfT3xQd"
-                title="Chúc mừng sinh nhật thầy cô- 13 years ago"
-                frameborder="0"
-                allowfullscreen
-                loading="lazy"
-              ></iframe>
-            </div>
+    <!-- Video chính -->
+    <div class="video-player">
+      <iframe
+        id="main-video"
+        src="https://www.youtube.com/embed/iPXfggoTwaA"
+        title="Video kỷ niệm"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
 
-            <div class="video-playlist">
-              <div class="https://www.youtube.com/watch?v=5BpF28AxBDE" data-video="eg6kNoJmzkY">
-                <img src="assets/video-thumb.jpg" alt="Video 1" />
-                <div class="video-title">Kỷ niệm xưa 12b1 13 năm trước</div>
-              </div>
+    <!-- Playlist -->
+    <div class="video-playlist">
+      <!-- Video 1 -->
+      <div class="video-thumb" data-video="5BpF28AxBDE">
+        <img
+          src="https://img.youtube.com/vi/5BpF28AxBDE/hqdefault.jpg"
+          alt="Video 1"
+        />
+        <div class="video-title">Kỷ niệm xưa 12B1 (13 năm trước)</div>
+      </div>
 
-              <div class="video-thumb" data-video="dQw4w9WgXcQ">
-                <img src="https://youtu.be/iPXfggoTwaA?si=mbdSDXHpBAfT3xQd" alt="Video 2" />
-                <div class="video-title">Chúc mừng sinh nhật thầy cô- 13 years ago</div>
-              </div>
+      <!-- Video 2 -->
+      <div class="video-thumb" data-video="iPXfggoTwaA">
+        <img
+          src="https://img.youtube.com/vi/iPXfggoTwaA/hqdefault.jpg"
+          alt="Video 2"
+        />
+        <div class="video-title">Chúc mừng sinh nhật thầy cô (13 years ago)</div>
+      </div>
 
-              <div class="video-thumb" data-video="kXYiU_JCYtU">
-                <img src="https://youtu.be/gfnh-j_FC0U?si=MgF4uk9bg3tic5ci" alt="Video 3" />
-                <div class="video-title">Kỷ Yếu 12A1 Huỳnh Thúc Kháng - Lâm Hà 2023</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!-- Video 3 -->
+      <div class="video-thumb" data-video="gfnh-j_FC0U">
+        <img
+          src="https://img.youtube.com/vi/gfnh-j_FC0U/hqdefault.jpg"
+          alt="Video 3"
+        />
+        <div class="video-title">Kỷ yếu 12A1 Huỳnh Thúc Kháng – Lâm Hà 2023</div>
+      </div>
+    </div>
+  </div>
+</div>
 
       <!-- FOOTER -->
       <footer class="main-footer">
@@ -559,4 +574,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
